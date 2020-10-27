@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
@@ -37,9 +37,13 @@
                         <li class="nav-item">
                             <a class="nav-link tm-nav-link" href="#work">Our Work</a>
                         </li>
+                        
+                       
                         <li class="nav-item">
-                            @*<a class="nav-link tm-nav-link" href="Home/Login">Login</a>*@
-                            <a class="nav-link tm-nav-link" asp-controller="Home" asp-action="Login">Login</a>
+
+                            <form action="Home/Login">
+                                <input type="submit" class="nav-link tm-nav-link" value="login" />
+                            </form>
                         </li>
                     </ul>
                 </div>
