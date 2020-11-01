@@ -32,14 +32,23 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link tm-nav-link" href="#introduction">Introduction</a>
+                            @*<a class="nav-link tm-nav-link" href="Index">Home</a>*@
+                            <form action="Home">
+                                <input type="submit" class="nav-link tm-nav-link" value="Home" />
+                            </form>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link tm-nav-link" href="#work">Our Work</a>
+                            <form action="Register">
+                                <input type="submit" class="nav-link tm-nav-link" value="Register" />
+                            </form>
+                            @*<a class="nav-link tm-nav-link" href="Register">Register</a>*@
                         </li>
                         <li class="nav-item">
                             @*<a class="nav-link tm-nav-link" href="Home/Login">Login</a>*@
-                            <a class="nav-link tm-nav-link" asp-controller="Home" asp-action="Login">Login</a>
+                            @*<a class="nav-link tm-nav-link" asp-controller="Home" asp-action="Login">Login</a>*@
+                            <form action="Login">
+                                <input type="submit" class="nav-link tm-nav-link" value="login"/>
+                            </form>
                         </li>
                     </ul>
                 </div>
